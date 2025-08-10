@@ -1,0 +1,80 @@
+Project Report
+Project Title:
+Text Auto Correction  Using Stack ( Undo / Redo Feature )using C++
+
+Project Overview:
+This project titled "Auto Correct with Undo and Redo Feature" is a simple text editing simulation implemented in C++. It provides users with basic text entry functionality while supporting Undo and Redo operations. These features are crucial in modern text editors for better user experience and productivity.
+Objective:
+The main goal of this project is to simulate a text auto-correction environment with the capability to:
+- Add text
+- Undo the last change
+- Redo the previously undone change
+Key Features:
+1. Text Addition: Users can input and append text to the current document.
+2. Undo Functionality: Reverts the last change by restoring the previous state.
+3. Redo Functionality: Re-applies an undone change if needed.
+4. User-friendly Interface: A simple console-based menu guides users through their options.
+
+Technologies Used:
+Programming Language: C++
+Libraries Used:
+- <iostream> for input and output operations
+- <stack> for managing undo and redo operations
+- <string> for text manipulation
+How It Works:
+Two stacks are used:
+- Undo Stack: Stores previous states of the text before any changes.
+- Redo Stack: Stores the undone states to allow redoing.
+
+When a user adds new text:
+- The current text is pushed onto the undo stack.
+- The redo stack is cleared to prevent conflicts.
+
+When "Undo" is selected:
+- The current state is pushed to the redo stack.
+- The top of the undo stack (previous state) is restored.
+
+When "Redo" is selected:
+- The current state is pushed to the undo stack.
+- The top of the redo stack (next state) is restored.
+Code Structure:
+Functions:
+- undo(...): Handles undo operations
+- redo(...): Handles redo operations
+
+Main Loop:
+- Presents the menu
+- Takes user input
+- Calls appropriate functions based on choices
+
+Sample Output:
+Welcome to the Text Auto-Correction System!
+
+Current Text:
+1. Add Text
+2. Undo
+3. Redo
+4. Exit
+Enter your choice: 1
+Enter text to add: Hello
+Text added. Current text: Hello
+
+Current Text: Hello
+Enter your choice: 1
+Enter text to add: World
+Text added. Current text: HelloWorld
+
+Current Text: HelloWorld
+Enter your choice: 2
+Undo performed. Current text: Hello
+
+Current Text: Hello
+Enter your choice: 3
+Redo performed. Current text: HelloWorld
+Conclusion:
+This project demonstrates the practical use of stack data structures in implementing Undo and Redo features, which are widely used in applications like text editors, image editors, and more. The program is a strong foundation for building more complex systems such as full-fledged editors with additional features like delete, search, and auto-save.
+Future Improvements:
+- Add delete and replace functionalities.
+- Implement a GUI using libraries like Qt or SFML.
+- Save and load text from a file.
+- Include multi-level undo/redo visualization.
