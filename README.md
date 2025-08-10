@@ -64,14 +64,11 @@ Redo performed. Current text: HelloWorld
 File Structure:
 ---------------
 project-folder/
-|
+
 |-- main.cpp            // Source code
 |-- README.txt          // Project explanation and guide
-|--member.txt           // Project member name
-|--Autocorrect.ppt      // Project ppt
 |--Autocorrect.doc      // Project report
-|--hacker_rank_ss.png   // Developer skill certificate
-|--ss1,ss2,ss3,output   // Project output
+|--ss1,ss2,ss3   // Project output
 
 How to Run:
 -----------
