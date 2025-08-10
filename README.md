@@ -66,9 +66,9 @@ File Structure:
 project-folder/
 
 |-- main.cpp            // Source code
-|-- README.txt          // Project explanation and guide
-|--Autocorrect.doc      // Project report
-|--ss1,ss2,ss3   // Project output
+|-- README.md          // Project explanation and guide
+|--proect_report      // Project report
+
 
 How to Run:
 -----------
